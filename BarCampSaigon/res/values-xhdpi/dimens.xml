@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cell_height_min">80dp</dimen>
+    <dimen name="left_column_width">100dp</dimen>
+    <dimen name="hour_scroll_view_height">55dp</dimen>
+    <dimen name="tab_height">43dp</dimen>
+    <dimen name="screen_title_text_size">20sp</dimen>
+    <dimen name="about_map_height">200dp</dimen>
+    <dimen name="about_label_min_width">90dp</dimen>
+    <dimen name="about_text_padding">5dp</dimen>
+    <dimen name="info_vespa_width">250dp</dimen>
+    <dimen name="info_divider_height">10dp</dimen>
+    <!-- Agenda dimens -->
+    <dimen name="talk_item_room_width">100dp</dimen>
+    <dimen name="talk_item_title_min_height">120dp</dimen>
+    <dimen name="talk_list_divider_height">10dp</dimen>
+    <dimen name="talk_text_padding">10dp</dimen>
+    <dimen name="talk_room_text_size">16sp</dimen>
+    <dimen name="talk_title_text_size">14sp</dimen>
+    <dimen name="talk_hour_text_size">15sp</dimen>
+    <!-- Tweet timeline dimens -->
+    <dimen name="tweet_author_text_size">13sp</dimen>
+    <dimen name="tweet_time_text_size">13sp</dimen>
+    <dimen name="tweet_content_text_size">14sp</dimen>
+    <dimen name="tweet_side_padding">10dp</dimen>
+    <dimen name="tweet_vertical_padding">10dp</dimen>
+    <dimen name="tweet_spacing">5dp</dimen>
+    <dimen name="tweet_avatar_size">60dp</dimen>
+    <!-- Participant dimens -->
+    <dimen name="attendee_profile_width">80dp</dimen>
+    <dimen name="attendee_record_height">80dp</dimen>
+    <dimen name="attendee_side_padding">10dp</dimen>
+    <dimen name="attendee_divider_height">10dp</dimen>
+    
+    <dimen name="info_profile_image_width">150dp</dimen>
+    <dimen name="info_profile_image_height">150dp</dimen>
+    <dimen name="info_panel_padding">10dp</dimen>
+    <dimen name="profile_font_size">20sp</dimen>
+    <dimen name="profile_position_size">18dp</dimen>
+    <dimen name="profile_scroll_side_padding">25dp</dimen>
+    <dimen name="profile_scroll_vertical_padding">10dp</dimen>
+    <dimen name="profile_margin_top">10dp</dimen>
+    
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="left_column_width">100dp</dimen>
+    <dimen name="hour_scroll_view_height">55dp</dimen>
+    <dimen name="tab_height">41dp</dimen>
+</resources>

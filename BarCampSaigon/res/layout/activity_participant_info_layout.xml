@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+
+     <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hour_scroll_view_height"
+        android:background="@drawable/toolbar_bgr" >
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/hour_item_text_color_selected"
+            android:textSize="@dimen/screen_title_text_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_tweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tweet_post_btn"
+            android:layout_margin="5dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/profile_scroll_vertical_padding"
+        android:paddingLeft="@dimen/profile_scroll_side_padding"
+        android:paddingRight="@dimen/profile_scroll_side_padding"
+        android:paddingTop="@dimen/profile_scroll_vertical_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_bgr"
+            android:orientation="vertical"
+            android:padding="@dimen/info_panel_padding" >
+
+            <ImageView
+                android:id="@+id/profile_image_view"
+                android:layout_width="@dimen/info_profile_image_width"
+                android:layout_height="@dimen/info_profile_image_height"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/profile_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/profile_font_size"
+                android:textStyle="bold" 
+                android:layout_marginTop="@dimen/profile_margin_top"/>
+
+            <TextView
+                android:id="@+id/profile_company_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/profile_position_size"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/profile_margin_top" />
+
+            <TextView
+                android:id="@+id/profile_position_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="italic" 
+                android:gravity="center"
+                android:layout_marginTop="@dimen/profile_margin_top"/>
+
+            <TextView
+                android:id="@+id/profile_present_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topic I wanna present:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/profile_margin_top" />
+
+            <TextView
+                android:id="@+id/profile_present_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:gravity="center"
+                android:layout_marginTop="@dimen/profile_margin_top"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/profile_hear_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Topic I wanna hear"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/profile_margin_top" />
+
+            <TextView
+                android:id="@+id/profile_hear_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/profile_margin_top" 
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

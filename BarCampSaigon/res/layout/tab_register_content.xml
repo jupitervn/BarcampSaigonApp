@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hour_scroll_view_height"
+        android:background="@drawable/toolbar_bgr"
+        android:gravity="center"
+        android:text="@string/tab_register"
+        android:textColor="@color/hour_item_text_color_selected"
+        android:textSize="@dimen/screen_title_text_size"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/search_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_holo_dark"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="center_vertical"
+        android:hint="@string/search_hint"
+        android:imeActionLabel="Search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColorHint="#BB000000"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/participants_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/attendee_divider_height" 
+        android:paddingLeft="@dimen/attendee_side_padding"
+        android:paddingRight="@dimen/attendee_side_padding"/>
+
+</LinearLayout>

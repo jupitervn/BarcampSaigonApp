@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   <declare-styleable name="calendar_sticky_view">
+        <attr name="startDate" format="string" />
+        <attr name="endDate" format="string" />
+    </declare-styleable>
+    <item type="id" name="item_item_position"></item>
+    <item type="id" name="item_item_populate"></item>
+
+</resources>

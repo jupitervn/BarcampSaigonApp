@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:barcampsg="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <!--
+    <org.barcampsaigon.android.ui.CalendarStickyList
+        android:id="@+id/calendar_sticky_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        barcampsg:endDate="10/01/2013"
+        barcampsg:startDate="08/01/2013" >
+    </org.barcampsaigon.android.ui.CalendarStickyList>
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hour_scroll_view_height"
+        android:id="@+id/hour_scroll_view_panel" >
+
+        <org.barcampsaigon.android.ui.ExtendedHorizontalScrollView
+            android:id="@+id/hour_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hour_scroll_view_height"
+            android:layout_marginLeft="@dimen/left_column_width"
+            android:background="@color/hour_scroll_view_background"
+            android:layout_gravity="right"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:id="@+id/hour_inner_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </org.barcampsaigon.android.ui.ExtendedHorizontalScrollView>
+
+        <TextView
+            android:id="@+id/selected_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:background="@color/selected_time_slot_color"
+             />
+    </FrameLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/calendar_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hour_scroll_view_panel"
+        android:background="@color/left_column_background" />
+
+</RelativeLayout>

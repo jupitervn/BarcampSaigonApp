@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/item_header"
+        android:layout_width="@dimen/left_column_width"
+        android:layout_height="match_parent"
+        android:background="@color/left_column_background"
+        android:textColor="@color/left_column_text_color"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+         />
+
+    <org.barcampsaigon.android.ui.ExtendedHorizontalScrollView
+        android:id="@+id/item_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/item_header"
+        android:scrollbars="none" 
+        android:fadingEdgeLength="0dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/item_inner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/tab_unfocused_color"
+            android:dividerPadding="3dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </org.barcampsaigon.android.ui.ExtendedHorizontalScrollView>
+
+</RelativeLayout>
