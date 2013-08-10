@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/tweet_side_padding"
+    android:paddingRight="@dimen/tweet_side_padding"
+    android:paddingTop="@dimen/tweet_vertical_padding"
+     >
+
+    <org.barcampsaigon.android.ui.CircleImageView
+        android:id="@+id/tweet_avatar"
+        android:layout_width="@dimen/tweet_avatar_size"
+        android:layout_height="@dimen/tweet_avatar_size"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/twitter_avatar_bgr"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tweet_avatar"
+        android:background="@drawable/tweet_box" 
+        android:layout_marginLeft="@dimen/tweet_spacing">
+
+        <TextView
+            android:id="@+id/tweet_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="2 min" 
+            android:textStyle="bold"
+            android:textSize="@dimen/tweet_time_text_size"
+            android:textColor="@color/tweet_grey_color"/>
+
+        <TextView
+            android:id="@+id/tweet_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tweet_time"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="AUTHOR"
+            android:textStyle="bold"
+            android:textSize="@dimen/tweet_author_text_size"
+            android:textColor="@color/tweet_grey_color" />
+
+        <TextView
+            android:id="@+id/tweet_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tweet_author"
+            android:layout_toRightOf="@id/tweet_avatar"
+            android:text="CONTEXT"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/tweet_normal_color"
+            android:textSize="@dimen/tweet_content_text_size"
+            android:autoLink="web" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/hour_scroll_view_panel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hour_scroll_view_height" >
+
+        <org.barcampsaigon.android.ui.ExtendedHorizontalScrollView
+            android:id="@+id/hour_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hour_scroll_view_height"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/toolbar_bgr"
+            android:fadingEdgeLength="0dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/hour_inner_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </org.barcampsaigon.android.ui.ExtendedHorizontalScrollView>
+
+        <TextView
+            android:id="@+id/hour_selected_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/hour_focus_bgr"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/section_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hour_scroll_view_panel" />
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="REFRESH"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/refresh_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hour_scroll_view_panel"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progress_medium_holo"
+            android:indeterminateDuration="1000" />
+
+        <TextView
+            android:id="@+id/pull_to_refresh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/pull_to_refresh_refreshing_label"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

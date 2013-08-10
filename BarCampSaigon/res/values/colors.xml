@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hour_scroll_view_background">#BB1D21</color>
+    <color name="left_column_background">#ffffffff</color>
+    <color name="left_column_text_color">#000000</color>
+    <color name="calendar_cell_background">#EF0970</color>
+    <color name="calendar_cell_text_color">#ffffffff</color>
+    <color name="tab_focused_color">#ffffffff</color>
+    <color name="tab_unfocused_color">#abe7e7e7</color>
+    <color name="selected_time_slot_color">#30000000</color>
+    <color name="background_color">#E8EAE1</color>
+    <!-- ABOUT tab colors -->
+    <color name="email_text_color_normal">#AF0820</color>
+    <color name="email_text_color_pressed">#4C4C4C</color>
+    
+    <!-- New color values -->
+    <color name="hour_item_text_color_normal">#909090</color>
+    <color name="hour_item_text_color_selected">#FF0000</color>
+    <color name="talk_author_text_color">#808080</color>
+    <color name="talk_title_text_color">#4A4A4A</color>
+    
+    <color name="talk_author_bgr">#EDEDED</color>
+    <color name="talk_item_bgr">#FCFCFC</color>
+    <color name="room_red_bgr">#DA2F44</color>
+    <color name="room_blue_bgr">#3892E3</color>
+    <color name="room_green_bgr">#4FE1C8</color>
+    
+    <!-- Tweet color -->
+    <color name="tweet_normal_color">#000000</color>
+    <color name="tweet_grey_color">#909090</color>
+    <color name="tweet_avatar_bound_color">#979797</color>
+</resources>

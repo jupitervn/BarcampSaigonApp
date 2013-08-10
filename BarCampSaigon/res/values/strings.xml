@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--  Common strings -->
+    <string name="app_name">BarCamp Saigon</string>
+    <string name="tab_about">About</string>
+    <string name="tab_register">Participants</string>
+    <string name="tab_agenda">Agenda</string>
+    <string name="tab_conversation">Tweet Timeline</string>
+    <plurals name="hour_string">
+        <item quantity="one">an hour ago</item>
+        <item quantity="other">%1$s hours ago</item>
+    </plurals>
+    <plurals name="minute_string">
+        <item quantity="one">a minute ago</item>
+        <item quantity="other">%1$s minutes ago</item>
+    </plurals>
+    
+    <string name="agenda_connection_error">Please enable your internet connection to get the latest data.</string>
+    <string name="map_marker_title">RMIT International University Vietnam</string>
+    <string name="map_marker_subtitle">702 Nguyễn Văn Linh, Tân Phong, Quận 7, TP.HCM</string>
+    
+    <string name="contact_text">+ contact us:</string>
+    <string name="contact_email">barcamp@barcampsaigon.com</string>
+    <string name="bug_text">+ bug report:</string>
+    <string name="bug_email">vu.cao.duy@gmail.com</string>
+    <string name="barcamp_url">http://barcampsaigon.org/</string>
+    <string name="about_text">Welcome to &lt;br&gt; the &lt;br&gt; &lt;font color=&quot;#A5091D&quot; size=&quot;6&quot;&gt;BIGGEST &lt;br&gt; UNCONFERENCE&lt;/font&gt; &lt;br&gt; in town &lt;br&gt; &lt;br&gt; &lt;font color=&quot;#A5091D&quot; size=&quot;5&quot;&gt;Our event will be held at &lt;br&gt; RMIT on July 7th, 2013.&lt;/font&gt;&lt;br&gt;</string>
+	<!-- Social Fragment strings -->
+	<string name="tweet_author_string">&lt;b&gt;&lt;font color=&quot;%1$s&quot;&gt;%2$s&lt;/font&gt;&lt;/b&gt; @%3$s</string>
+	<string name="permlab_authApp">request access to your Twitter account</string>
+    <string name="permdesc_authApp">Allows the application to request access to your Twitter account.</string>
+    <string name="tweet_post_failed">Post tweet failed. Please check your connection and try again.</string>
+    <string name="tweet_app_not_found">Please install or update your Twitter application.</string>
+    <string name="tweet_required">Please provide text to tweet.</string>
+    <string name="search_hint">Name or Company</string>    
+    
+    <string name="map_first_floor">1st floor</string>
+    <string name="map_second_floor">2nd floor</string>
+    <string name="map_third_floor">3rd floor</string>
+
+</resources>

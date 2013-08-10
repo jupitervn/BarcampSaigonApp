@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hour_scroll_view_height"
+        android:background="@drawable/toolbar_bgr" 
+        android:orientation="horizontal">
+         <ImageView
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_map" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/tab_about"
+            android:textColor="@color/hour_item_text_color_selected"
+            android:textSize="@dimen/screen_title_text_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_help" />
+
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_content_wrapped"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_header"
+        android:layout_margin="10dp"
+        android:visibility="invisible" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshWebView
+            android:id="@+id/ll_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_header" >
+        </com.handmark.pulltorefresh.library.PullToRefreshWebView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/vespa_girl_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/vespa_girl" />
+
+</RelativeLayout>

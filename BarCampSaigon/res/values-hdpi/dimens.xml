@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="left_column_width">90dp</dimen>
+    <dimen name="hour_scroll_view_height">55dp</dimen>
+    <dimen name="tab_height">41dp</dimen>
+    <dimen name="cell_height_min">80dp</dimen>
+    
+    <dimen name="attendee_side_padding">10dp</dimen>
+    
+    <dimen name="info_profile_image_width">150dp</dimen>
+    <dimen name="info_profile_image_height">150dp</dimen>
+    <dimen name="info_panel_padding">10dp</dimen>
+    <dimen name="profile_font_size">20sp</dimen>
+    <dimen name="profile_position_size">18dp</dimen>
+    <dimen name="profile_scroll_side_padding">25dp</dimen>
+    <dimen name="profile_scroll_vertical_padding">10dp</dimen>
+    <dimen name="profile_margin_top">10dp</dimen>
+</resources>
